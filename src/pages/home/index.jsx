@@ -81,21 +81,69 @@ export default function Home() {
                     </div>  
                     <div className="contener">
 
-                        <div className="inpu">
-                            <h1>Nome </h1>
+                       
 
-                            <input type="text" />
+                            <div className="cont1">
+                                <div className="inpute">
+                                    <h1>Nome: </h1>
+                                    <input type="text" />
+                                </div>
+                            </div>    
+                            
+                            <div className="cont2">
+                                <div className="inpute">
+                                    <h1> Grupo: </h1>
 
-                            <h1> Grupo </h1>
+                                    <input type="text" />
+                                </div>
 
-                            <input type="text" />
+                                <div className="inpute">
+                                    <h1> Data de Nascimento:</h1>
 
-                            <h1> Data de Nascimento</h1>
+                                    <input type="date" />
+                                </div>
 
-                            <input type="text" />
+                                <div className="inpute">
+                                    <h1> Idade: </h1>
 
-                            <h1> </h1>
-                        </div>
+                                    <input type="text" />
+
+                                </div>
+                            </div>
+
+                            <div className="cont3">
+                                <div className="inpute">
+                                    <h1> Genero: </h1>
+
+                                    <input type="text" />
+
+                                </div>
+
+                                <div className="inpute">
+                                    <h1> Email: </h1>
+
+                                    <input type="text" />
+                                </div>
+
+                            </div>
+
+                            <div className="cont4">
+
+                                <div className="inpute">
+                                    <h1> Celular: </h1>
+                                    <input type="text" placeholder='+55' />
+                                </div>
+
+                                <div className="inpute">
+                                    <h1>CPF:</h1>
+                                    <input type="text" />
+                                </div>
+                                <div className="inpute">
+                                    <h1> RG: </h1>
+                                    <input type="text" />
+                                </div>
+                            </div>
+                        
                     </div>
                 </div>
             </div>
