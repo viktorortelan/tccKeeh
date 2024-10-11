@@ -1,11 +1,12 @@
-import Home from "./pages/home";
+
+import Landingpage from "./pages/landingpage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function Rotas() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Home/>}/>
+                <Route path="/" element={<Landingpage/>}/>
             </Routes>
         </BrowserRouter>
     )
