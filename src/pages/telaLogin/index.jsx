@@ -9,6 +9,12 @@ export default function TelaLogin() {
     return(
         <div className="telaLogin">
             <div className="all">
+                
+                <div className="direita">
+                    <div className="centro">
+                        <img src="/assets/image/logo.png" alt="logo" />
+                    </div>
+                </div>
                 <div className="esquerda">
                     <div className="card">
                         <h1>Login</h1>
@@ -26,11 +32,6 @@ export default function TelaLogin() {
                                 <img id='cadeado' src="/assets/image/lock-fill.svg" alt="envelope" />
                            </div>
                         </div>
-                    </div>
-                </div>
-                <div className="direita">
-                    <div className="centro">
-                        <img src="/assets/image/logo.png" alt="logo" />
                     </div>
                 </div>
             </div>

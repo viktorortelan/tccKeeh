@@ -20,7 +20,17 @@ export default function Landingpage () {
            
 
 
-            <div className="banner" style={{backgroundImage: `URL(${imagem})`}}> </div>
+            <div className="banner" style={{backgroundImage: `URL(${imagem})`}}>
+
+                <div className='protecao'>   
+                    <div className="car">
+                        <h1> O melhor para a sua saúde</h1>
+
+                        <button> Faça seu agendamento</button>
+
+                    </div>
+                </div>
+             </div>
         </div>
     )
 }

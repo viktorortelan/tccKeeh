@@ -2,25 +2,25 @@ import { useState } from "react";
 import './index.scss';
 
 export default function Card(props) {
-    const [exibir, setExibir] = useState(true);
+    const [exibir, setExibir] = useState(false);
 
     const mostrar = () => {
         setExibir(!exibir);
     };
 
-    const [exibi, setExibi] = useState(true);
+    const [exibi, setExibi] = useState(false);
 
     const colocar = () => {
         setExibi(!exibi);
     };
 
-    const [visualizar, setVisualizar] = useState(true);
+    const [visualizar, setVisualizar] = useState(false);
 
     const endereco = () => {
         setVisualizar (!visualizar);
     }
 
-    const [coloca, setColoca] = useState(true);
+    const [coloca, setColoca] = useState(false);
 
     const enderec = () => {
         setColoca(!coloca);
