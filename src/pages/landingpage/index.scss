@@ -1,28 +1,80 @@
-.landpage{
-display: flex;
-flex-direction: column;
-align-items: center;
-height: 100vh;
-width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+        .landpage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
 
 
     .banner{
         width: 100%;
-        height: 680px;
+        height: 60vh;
         background-size: cover;
+        display: flex;
+        align-items: center;
+        
         .protecao{
             display: flex;
             flex-direction: row;
-            justify-content: flex-start;
-            padding-left: 10%;
             align-items: center;
             height: 50%;
+            margin-left: 20%;
+        
 
             .car{
                 display: flex;
                 flex-direction: column;
-                background-color: #fff;
-              
+                background-color: #ffffffcc;
+                border-radius: 19px;
+                padding: 30px 60px 30px 60px;
+                gap: 10px;
+                align-items: center ;
+                justify-content: center;
+                
+
+                     .agendamento{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        padding: 13px;
+                        border-radius: 25px;
+                        width: 100%;
+                        height: 40px;
+                        border: 1px solid #00000025;
+                        color: #fff;
+                        background-color: #4ab0cf;
+                        margin-top: 10px;
+                            img {
+                                width: 15px;
+                                height: 17px;
+                            }
+                    }
+
+                h1{
+                    width: 200px;
+                    color: #1EAFED;
+                    font-family: "Raleway", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: 600;
+                    font-style: normal;
+                    font-size: 40px;
+
+
+                    span{
+                        
+                            font-family: "Lilita One", sans-serif;
+                            font-weight: 500;
+                            font-style: normal;
+                            font-size: 50px;
+                            color: #27C1C6;
+                          
+                    }
+                    
+                }
+
                 } 
         }
     }
@@ -54,6 +106,58 @@ width: 100%;
 
        
     }
+    .conteudoInformativos{
+        padding: 20px;
+        gap: 10px;     
+        display:flex ;
+        flex-direction: column;
+        align-items: center;
+        .card2{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+    }
+        .sobre {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 50px;
 
+            .tex {
+                padding: 80px;
+                border-radius: 25px;
+                border: 2px solid #03989F;
+                display: flex;
+                border-radius: 80px;
+                flex-direction: column;
+                margin: 50px 0px;
+          
+                gap: 20px;
+                
+                p{
+                    width: 50vh;
+                }    
+
+                button {
+                    width: 120px;
+                    padding: 10px 20px;
+                    border: 1px solid #03989F;
+                    background-color: transparent;
+                    border-radius: 5px;
+                    font: 600 12px arial;
+                    color: #03989F;
+                }
+                    
+            }
+
+
+            img{
+                width: 27vw;
+                height: 26vw;
+                border-radius: 50vw;
+                border-color: transparent;
+            }
+        }
 
 }

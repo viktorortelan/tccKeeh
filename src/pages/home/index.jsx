@@ -21,7 +21,7 @@ export default function Home() {
                 </div>
 
                 <div className="card">
-
+                        
                     <Card/>
 
                 </div>

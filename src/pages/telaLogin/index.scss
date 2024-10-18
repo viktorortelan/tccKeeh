@@ -19,17 +19,28 @@
             justify-content: center;
             height: 100vh;
             width: 100%;
+            
             .card{
-                
                 padding: 20px 3px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 5px;
+                gap: 10px;
 
+                .reconfigurar {
+                    display: flex;
+                    justify-content: end;
+                
+                    h1 a{
+                    text-decoration: none;
+                    color: #3f3e3e;
+                    font: 500 20px poppins;
+                }
+                     }   
                 h1{
-                    font: 700 70px roboto;
-                    color: #049299;
+                    font: 750 60px roboto;
+                    color: #000000;
+
                 }
 
                 .perguntas{
@@ -70,6 +81,30 @@
                        
                     }
                 }
+                button{
+                    padding: 12px 45px;
+                    font: 500 18px poppins;
+                    border-radius: 25px;
+                    cursor: pointer;
+                    align-self: self-end;
+                    margin:20px 37px 0px 0px;
+                    background-color: #05a5ad;
+                    border: 2px solid transparent ;
+                    color: rgb(255, 255, 255);
+                    transition: .5s;
+                }
+                button:hover{
+                    transform: scaleX(1.05);
+                    background-color: #ffffff;
+                    color: #17d1b8;
+                    border: 2px solid #17d1b8 ;
+                }
+                button:active{
+                    transform: scaleX(1);
+                    background-color: #05a5ad;
+                    color: #fff;
+                }
+
             }
         }
 
@@ -96,7 +131,8 @@
         background-color: #03989F;
         justify-content: space-around;
         padding: 60px 0px;
-
+        height: 40%;
+        
         .um{
             display: flex;
             flex-direction: column;
@@ -162,7 +198,7 @@
             margin-left: -20px;
 
             h1{
-                font: 400 30px roboto;
+               
                 color: #fff;
             }
         }
@@ -173,7 +209,6 @@
             gap: 20px;
 
             h1{
-                font: 400 30px roboto;
                 color: #fff;
             }
 

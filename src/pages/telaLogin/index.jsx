@@ -21,17 +21,31 @@ export default function TelaLogin() {
                         <div className="perguntas">
                             <h1>E-mail:</h1>
                             <div className="inputes">
-                                <input type="text" placeholder='usuario@gmail.com'  value={email} onChange={e=>setEmail(e.target.value)}/>
+                                <input type="text" placeholder='Usuario@gmail.com'  value={email} onChange={e=>setEmail(e.target.value)}/>
                                 <img id='email' src="/assets/image/envelope.svg" alt="envelope" />
+                    
                             </div>
+                            <div className="reconfigurar">
+                                        <h1>
+                                            <a href="">Reconfigurar email</a>
+                                        </h1>
+                                    </div>
                         </div>
                         <div className="perguntas">
                             <h1>Senha:</h1>
                            <div className="inputes">
-                                <input type="password" placeholder='sua senha' value={senha} onChange={e=>setSenha(e.target.value)}/>
+                                <input type="password" placeholder=' Sua senha' value={senha} onChange={e=>setSenha(e.target.value)}/>
                                 <img id='cadeado' src="/assets/image/lock-fill.svg" alt="envelope" />
                            </div>
+                                    <div className="reconfigurar">
+                                        <h1>
+                                            <a href="">Reconfigurar senha</a>
+                                        </h1>
+                                    </div>
                         </div>
+                        
+                        <button>Entrar</button>
+
                     </div>
                 </div>
             </div>
@@ -39,13 +53,11 @@ export default function TelaLogin() {
 
             <div className="rodape">
                 <div className="um">
-                    <img id='logo' src="/assets/image/sla 1.png" alt="logoRodape" />
+                    <img id='logo' src="/assets/image/sla1.png" alt="logoRodape" />
                     <div className="redes">
                         <img id='a' src="/assets/image/linkedin.svg" alt="" />
                         <img id='b' src="/assets/image/instagram.svg" alt="" />
                         <img id='c' src="/assets/image/twitter-x.svg" alt="" />
-
-
                     </div>
                 </div>
 
