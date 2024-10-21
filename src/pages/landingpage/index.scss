@@ -1,14 +1,148 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-        .landpage{
+.bbb {
+    width: 50vw;
+    height: 250px;
+    position: fixed;
+    left: 25vw;
+    top: 33vh;
+
+    .btn-x {
+        position: absolute;
+        z-index: 2;
+        top: 10px;
+        right: 15px;
+        border: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 3px;
+        background-color: #ee4343;
+        color: #fff;
+        font: 800 8px arial;
+    }
+
+}
+
+.landpage{
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 100%;
         width: 100%;
         overflow-x: hidden;
+    .rodape{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: #03989F;
+        justify-content: space-around;
+        padding: 60px 0px;
+        height: 40%;
+        
+        .um{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
 
+            #logo{
+                width: 300px;
+                
+            }
+
+            .redes {
+                display: flex ;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+
+                #a{
+                    width: 40px;
+                    border-radius: 10px;
+                    background-color: #F9F4F4;
+                    cursor: pointer;
+                }
+                #a:hover{
+                    transform: scale(1.1);
+                    background-color: rgb(0, 217, 255);
+                }
+                #a:active{
+                    transform: scale(1.0);
+                    background-color: #F9F4F4;
+                }
+                #b{
+                    width: 40px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+                #b:hover{
+                    transform: scale(1.1);
+                    background-color: rgb(0, 217, 255);
+                }
+                #b:active{
+                    transform: scale(1.0);
+                    background-color: #F9F4F4;
+                }
+                #c{
+                    width: 40px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+                #c:hover{
+                    transform: scale(1.1);
+                    background-color: rgb(0, 217, 255);
+                }
+                #c:active{
+                    transform: scale(1.0);
+                    background-color: #F9F4F4;
+                }
+            }
+        }
+
+        .dois{
+            display: flex;
+            flex-direction: column;
+            margin-left: -20px;
+
+            h1{
+               
+                color: #fff;
+            }
+        }
+
+        .tres{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            h1{
+                color: #fff;
+            }
+
+            .links{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                a{
+                    font: 400 24px roboto;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .quatro{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            h1{
+                font: 400 30px roboto;
+                color: #fff;
+            }
+        }
+    }
 
     .banner{
         width: 100%;
@@ -125,6 +259,9 @@
 
         }
         .card1 {
+            background-color: #ffffff;
+        }
+        .card2 {
             background-color: #ffffff;
         }
     }
