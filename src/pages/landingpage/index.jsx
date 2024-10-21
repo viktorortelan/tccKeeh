@@ -274,7 +274,7 @@ export default function Landingpage() {
                 </div>
 
                 <div className="quatro">
-                    <h1>Politica de privacidade</h1>
+                    <h1>Política de privacidade</h1>
 
                     <h1>FAQ</h1>
                 </div>
