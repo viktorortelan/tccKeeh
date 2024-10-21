@@ -1,0 +1,239 @@
+.telaLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F9F4F4;
+    height: 100vh;
+    width: 100%;
+
+
+    .all{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        .esquerda{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            
+            .card{
+                padding: 20px 3px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+
+                .reconfigurar {
+                    display: flex;
+                    justify-content: end;
+                
+                    h1 a{
+                    text-decoration: none;
+                    color: #3f3e3e;
+                    font: 500 20px poppins;
+                }
+                     }   
+                h1{
+                    font: 750 60px roboto;
+                    color: #000000;
+
+                }
+
+                .perguntas{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    h1{
+                        font: 500 30px roboto;
+                        color: #03989F;
+                    }
+
+                    .inputes{
+                        display: flex;
+                        flex-direction: row;
+                        position: relative;
+
+                        input{
+                            font: 400 20px roboto;
+                            padding: 10px 10px 10px 40px;
+                            border: 2px solid #03989F;
+                            border-radius: 8px;
+                            outline: none;
+                        }
+
+                        #cadeado{
+                            width: 30px;
+                            position: absolute;
+                            bottom: 9px;
+                            left: 5px;
+                        }
+                        #email{
+                            width: 30px;
+                            position: absolute;
+                            bottom: 9px;
+                            left: 5px;
+                        }
+                       
+                    }
+                }
+                button{
+                    padding: 12px 45px;
+                    font: 500 18px poppins;
+                    border-radius: 25px;
+                    cursor: pointer;
+                    align-self: self-end;
+                    margin:20px 37px 0px 0px;
+                    background-color: #05a5ad;
+                    border: 2px solid transparent ;
+                    color: rgb(255, 255, 255);
+                    transition: .5s;
+                }
+                button:hover{
+                    transform: scaleX(1.05);
+                    background-color: #ffffff;
+                    color: #17d1b8;
+                    border: 2px solid #17d1b8 ;
+                }
+                button:active{
+                    transform: scaleX(1);
+                    background-color: #05a5ad;
+                    color: #fff;
+                }
+
+            }
+        }
+
+        .direita{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+
+            .centro{
+                img{
+                    width: 500px;
+                }
+            }
+        }
+    }
+
+    .rodape{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: #03989F;
+        justify-content: space-around;
+        padding: 60px 0px;
+        height: 40%;
+        
+        .um{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            #logo{
+                width: 300px;
+                
+            }
+
+            .redes {
+                display: flex ;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+
+                #a{
+                    width: 40px;
+                    border-radius: 10px;
+                    background-color: #F9F4F4;
+                    cursor: pointer;
+                }
+                #a:hover{
+                    transform: scale(1.1);
+                    background-color: rgb(0, 217, 255);
+                }
+                #a:active{
+                    transform: scale(1.0);
+                    background-color: #F9F4F4;
+                }
+                #b{
+                    width: 40px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+                #b:hover{
+                    transform: scale(1.1);
+                    background-color: rgb(0, 217, 255);
+                }
+                #b:active{
+                    transform: scale(1.0);
+                    background-color: #F9F4F4;
+                }
+                #c{
+                    width: 40px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+                #c:hover{
+                    transform: scale(1.1);
+                    background-color: rgb(0, 217, 255);
+                }
+                #c:active{
+                    transform: scale(1.0);
+                    background-color: #F9F4F4;
+                }
+            }
+        }
+
+        .dois{
+            display: flex;
+            flex-direction: column;
+            margin-left: -20px;
+
+            h1{
+               
+                color: #fff;
+            }
+        }
+
+        .tres{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            h1{
+                color: #fff;
+            }
+
+            .links{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                a{
+                    font: 400 24px roboto;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .quatro{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            h1{
+                font: 400 30px roboto;
+                color: #fff;
+            }
+        }
+    }
+}
