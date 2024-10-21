@@ -115,17 +115,27 @@
               
             }
 
-            .oloco{
-
-                a{
-                   color: #03989F; 
-                }
-                height: 35px;
-                width: 6%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            #oloco{
+                color: #03989F; 
+                padding: 5px 10px;
+                border: 3px solid transparent;
+                border-radius: 2px;
+                font: 400 24px roboto;
                 background-color: #fff;
+                transition: .3s;
+            }
+
+            #oloco:hover{
+                transform: scale(1.1);
+                background-color: #27C1C6;
+                color: #fff;
+                border: 3px solid #fff;
+            }
+
+            #oloco:active{
+                background-color: #fff;
+                color: #27C1C6;
+                border: none;
             }
         }
        
@@ -184,6 +194,104 @@
             border-color: transparent;
         }
     }
+
+
+    .especialidades{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0px;
+        width: 100%;
+        background-color: #03989F;
+
+        h1{
+            font: 500 30px roboto;
+            color: #FFF;
+            margin: 40px 0px;
+        }
+
+        .quatro{
+            display: flex;
+            flex-direction: row;
+            
+
+            img{
+                width: 250px;
+                cursor: pointer;
+            }
+        }
+
+        .tres{
+            display: flex;
+            flex-direction: row;
+            margin: 30px 0px ;
+
+            img{
+                width: 250px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .popup-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+    }
+    
+    .popup {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 55%;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 3px 3px 5px gray;
+        padding: 20px;
+    }
+    
+    .infos {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        gap: 5px;
+    
+        h1 {
+            background-color: #03979f70;
+            padding: 20px;
+            border-radius: 20px 20px 20px 0px;
+        }
+    
+        .text {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 40px;
+    
+            p {
+                font: 400 20px roboto;
+            }
+    
+            button {
+                align-self: self-start;
+                padding: 5px 10px;
+                background-color: #27C1C6;
+                border-radius: 5px;
+                border: 2px solid transparent;
+                font: 400 20px roboto;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+    
 
     .rodape{
         display: flex;
