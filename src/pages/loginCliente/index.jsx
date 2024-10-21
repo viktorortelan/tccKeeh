@@ -1,8 +1,8 @@
 import './index.scss';
-import axios from "axios";
+
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import storage from 'local-storage';
+
+
 
 
 
@@ -12,9 +12,9 @@ import storage from 'local-storage';
 export default function Login() {
     const [email, setEmail] = useState('')
     const [cpf, setCpf] = useState('')
-    const [erro, setErro] = useState('');
+   
 
-    const navigate = useNavigate();
+   
 
 
     return (

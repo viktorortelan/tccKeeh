@@ -51,39 +51,7 @@ export default function TelaLogin() {
             </div>
 
 
-            <div className="rodape">
-                <div className="um">
-                    <img id='logo' src="/assets/image/sla1.png" alt="logoRodape" />
-                    <div className="redes">
-                        <img id='a' src="/assets/image/linkedin.svg" alt="" />
-                        <img id='b' src="/assets/image/instagram.svg" alt="" />
-                        <img id='c' src="/assets/image/twitter-x.svg" alt="" />
-                    </div>
-                </div>
 
-                <div className="dois">
-                    <h1>HSSW Code.</h1>
-                    <h1>O que persiste é o aprendizado.</h1>
-
-                </div>
-
-                <div className="tres">
-                    <h1>Explore</h1>
-                    <div className="links">
-                        <Link to='/'>Home</Link>
-                        <Link to='/'>Sobre Nós</Link>
-                        <Link to='/'>Especialidades</Link>
-                        <Link to='/'>Curiosidades</Link>
-                        <Link to='/'>Contatos</Link>
-                    </div>
-                </div>
-
-                <div className="quatro">
-                    <h1>Politica de privacidade</h1>
-
-                    <h1>FAQ</h1>
-                </div>
-            </div>
         </div>
     )
 }
