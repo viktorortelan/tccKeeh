@@ -5,63 +5,119 @@ import { useRef, useState } from 'react';
 
 export default function Landingpage() {
     const especialidadesRef = useRef(null);
-    const [mostrarPopup, setMostrarPopup] = useState(false);
-    const [mostrarPopup2, setMostrarPopup2] = useState(false);
-    const [mostrarPopup3, setMostrarPopup3] = useState(false);
-    const [mostrarPopup4, setMostrarPopup4] = useState(false);
-    const [mostrarPopup5, setMostrarPopup5] = useState(false);
-    const [mostrarPopup6, setMostrarPopup6] = useState(false);
-    const [mostrarPopup7, setMostrarPopup7] = useState(false);
+    const curiosidadeRef = useRef(null);
+    const sobreRef = useRef(null);
+    const homeRef = useRef(null);
 
     const scrollToEspecialidades = () => {
         especialidadesRef.current?.scrollIntoView({ behavior: 'smooth' });
     };
 
+    const scrollCuruicidade = () => {
+        curiosidadeRef.current?.scrollIntoView({behavior: 'smooth'})
+    }
 
-    
-    const abrirPopup = () => {
-        setMostrarPopup(true);
-    };
+    const scrollSobre = () => {
+        sobreRef.current?.scrollIntoView({ behavior: 'smooth'})
+    }
 
-   
-    const fecharPopup = () => {
-        setMostrarPopup(false);
-    };
+    const scrollHome = () => {
+        homeRef.current?.scrollIntoView({ behavior: 'smooth'})
+    }
 
+    const [mostrarPopup, setMostrarPopup] = useState(false);
 
-    const clicaFora = (e) => {
-        if (e.target.classList.contains('popup-background')) {
-            fecharPopup();
+        const abrirPopup = () => {
+            setMostrarPopup(true);
+        };
+
+        const clicaFora = (e) => {
+            if (e.target.classList.contains('popup-background')) {
+                setMostrarPopup(false)
+            }
+        };
+
+    const [mostrarPopup2, setMostrarPopup2] = useState(false);
+
+        const abrirPopup2 = () => {
+            setMostrarPopup2(true);
+        };
+
+        const clicaFora2 = (e) => {
+            if (e.target.classList.contains('popup-background')) {
+                setMostrarPopup2(false);
+            }
+        };
+
+//popup 3
+    const [mostrarPopup3, setMostrarPopup3] = useState(false);
+        const abrirPopup3 = () => {
+            setMostrarPopup3(true)
         }
-    };
+        const clicaFora3 = (e) => {
+            if(e.target.classList.contains('popup-background')) {
+                setMostrarPopup3(false)
+            }
+        }   
 
 
-    const abrirPopup2 = () => {
-        setMostrarPopup2(true);
-    };
-
-   
-    const fecharPopup2 = () => {
-        setMostrarPopup2(false);
-    };
-
-
-    const clicaFora2 = (e) => {
-        if (e.target.classList.contains('popup-background')) {
-            fecharPopup2();
+    const [mostrarPopup4, setMostrarPopup4] = useState(false);
+        
+        const abrirPopup4 = () => {
+            setMostrarPopup4(true)
         }
-    };
+
+        const clicarFora4 = (e) => {
+            if(e.target.classList.contains('popup-background')) {
+                setMostrarPopup4(false)
+            }
+        }
+
+    const [mostrarPopup5, setMostrarPopup5] = useState(false);
+
+        const abrirPopup5 = () => {
+            setMostrarPopup5(true)
+        }
+
+        const clicarFora5 = (e) => {
+            if(e.target.classList.contains('popup-background')) {
+                setMostrarPopup5(false)
+            }
+    }
+    const [mostrarPopup6, setMostrarPopup6] = useState(false);
+
+        const abrirPopup6 = () => {
+            setMostrarPopup6(true)
+        }
+
+        const clicarFora6 = (e) => {
+            if(e.target.classList.contains('popup-background')) {
+                setMostrarPopup6(false)
+            }
+        }
+    const [mostrarPopup7, setMostrarPopup7] = useState(false);
+
+        const abrirPopup7 = () => {
+            setMostrarPopup7(true)
+        }
+
+        const clicarFora7 = (e) => {
+            if(e.target.classList.contains('popup-background')) {
+                setMostrarPopup7(false)
+            }
+        }
+
     
 
     return (
         <div className="landpage">
-            <div className="cabecalho">
+            <div className="cabecalho" ref={homeRef}>
                 <img src="assets/image/logo.webp" alt="nao foi" />
                 <div className="links">
                     <Link to='/'>Home</Link>
-                    <Link to='/'>Sobre Nós</Link>
+                    <Link to='#' onClick={scrollSobre}>Sobre Nós</Link>
                     <Link to='#' onClick={scrollToEspecialidades}>Especialidades</Link>
-                    <Link to='/'>Curiosidades</Link>
+                    <Link to='#' onClick={scrollCuruicidade}>Curiosidades</Link>
                     <Link to='/'>Contatos</Link>
                     
                         <Link id='oloco' to='/telaLogin'> Login </Link>
@@ -78,10 +134,12 @@ export default function Landingpage() {
                 </div>
             </div>
 
-            <div className="sobre">
+            <div className="sobre" ref={sobreRef}>
                 <div className="tex"> 
                     <h1>Sobre nós</h1>
-                    <p>Nosso objetivo é ir além de uma simples seção de fisioterapia e pilates, buscamos impulsionar a saúde dos nossos clientes...</p>
+                    <p>Nosso objetivo é ir além de uma simples seção de fisioterapia e pilates, buscamos impulsionar a sáude dos nossos clientes. Entendemos que cada organização é única em sua estrutura e necessidade, por isso estamos comprometidos em oferecer soluções personalizadas e integradas à sua realidade, independente do seu porte.</p>
+                    <p>Estamos prontos para ajudá-lo a alcançar seus objetivos. Nossa experiência e dedicação em transformar-lo uma nova pessoa são a base para o seu sucesso. 
+Junte-se a nós e    descubra.</p>
                     <button>Saiba mais</button>
                 </div>
                 <img src="/assets/image/doutora.jpg" alt="Sobre nós" />
@@ -89,7 +147,7 @@ export default function Landingpage() {
 
 
             <div className="especialidades" ref={especialidadesRef}>
-                <h1>Nossas Especialidades</h1>
+                <h1>Especialidades</h1>
                 <div className="quatro">
                     <div className="info">
                         <img onClick={abrirPopup} src="/assets/image/card7.png" alt="" />
@@ -100,11 +158,11 @@ export default function Landingpage() {
                         
                     </div>
                     <div className="info">
-                        <img src="/assets/image/card7.png" alt="" />
+                        <img onClick={abrirPopup3} src="/assets/image/card7.png" alt="" />
                         
                     </div>
                     <div className="info">
-                        <img src="/assets/image/card7.png" alt="" />
+                        <img onClick={abrirPopup4} src="/assets/image/card7.png" alt="" />
                         
                     </div>
                    
@@ -112,15 +170,15 @@ export default function Landingpage() {
 
                 <div className="tres">
                     <div className="info">
-                        <img src="/assets/image/card7.png" alt="" />
+                        <img  onClick={abrirPopup5} src="/assets/image/card7.png" alt="" />
                         
                     </div>
                     <div className="info">
-                        <img src="/assets/image/card7.png" alt="" />
+                        <img onClick={abrirPopup6} src="/assets/image/card7.png" alt="" />
                         
                     </div>
                     <div className="info">
-                        <img src="/assets/image/card7.png" alt="" />
+                        <img onClick={abrirPopup7} src="/assets/image/card7.png" alt="" />
                         
                     </div>
                 </div>
@@ -134,7 +192,7 @@ export default function Landingpage() {
                             <h1>Acupuntura</h1>
                             <div className="text">
                                 <p>Envolve o uso de agulhas finas para estimular pontos específicos no corpo, visando aliviar a dor e promover o equilíbrio energético.</p>
-                                <button onClick={fecharPopup}>Agendar</button>
+                                <button >Agendar</button>
                             </div>
                         </div>
                         <img src="/assets/image/business 1.png" alt="Acupuntura" />
@@ -148,7 +206,22 @@ export default function Landingpage() {
                             <h1>Esportiva</h1>
                             <div className="text">
                                 <p>É voltada para atletas, ajudando na prevenção e tratamento de lesões relacionadas à prática esportiva, além de otimizar o desempenho.</p>
-                                <button onClick={fecharPopup2}>Agendar</button>
+                                <button>Agendar</button>
+                            </div>
+                        </div>
+                        <img src="/assets/image/business 1 (8).png" alt="Acupuntura" />
+                    </div>
+                </div>
+            )}
+
+            {mostrarPopup3 && (
+                <div className="popup-background" onClick={clicaFora3}>
+                    <div className="popup">
+                        <div className="infos">
+                            <h1>Esportiva</h1>
+                            <div className="text">
+                                <p>É voltada para atletas, ajudando na prevenção e tratamento de lesões relacionadas à prática esportiva, além de otimizar o desempenho.</p>
+                                <button>Agendar</button>
                             </div>
                         </div>
                         <img src="/assets/image/business 1 (8).png" alt="Acupuntura" />
@@ -157,7 +230,8 @@ export default function Landingpage() {
             )}
 
 
-            <div className='conteudoInformativos'>
+            <div className='conteudoInformativos' ref={curiosidadeRef}>
+                    <h1> Curiosidades </h1>
                 <div className="card1">
                     <img src="/assets/image/Inserir um subtítulo (1) 1.png" alt="" />
                 </div>
@@ -188,10 +262,10 @@ export default function Landingpage() {
                 <div className="tres">
                     <h1>Explore</h1>
                     <div className="links">
-                        <Link to='/'>Home</Link>
-                        <Link to='/'>Sobre Nós</Link>
+                        <Link to='#' onClick={scrollHome}>Home</Link>
+                        <Link to='#' onClick={scrollSobre}>Sobre Nós</Link>
                         <Link to='#' onClick={scrollToEspecialidades}>Especialidades</Link>
-                        <Link to='/'>Curiosidades</Link>
+                        <Link to='#' onClick={scrollCuruicidade}>Curiosidades</Link>
                         <Link to='/'>Contatos</Link>
                     </div>
                 </div>
