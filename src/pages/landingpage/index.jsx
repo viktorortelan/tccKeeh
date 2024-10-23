@@ -1,29 +1,10 @@
 import './index.scss';
 import { Link } from 'react-router-dom';
 import imagem from '../../assets/image/banner.svg'
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 export default function Landingpage() {
-    const especialidadesRef = useRef(null);
-    const curiosidadeRef = useRef(null);
-    const sobreRef = useRef(null);
-    const homeRef = useRef(null);
-
-    const scrollToEspecialidades = () => {
-        especialidadesRef.current?.scrollIntoView({ behavior: 'smooth' });
-    };
-
-    const scrollCuruicidade = () => {
-        curiosidadeRef.current?.scrollIntoView({behavior: 'smooth'})
-    }
-
-    const scrollSobre = () => {
-        sobreRef.current?.scrollIntoView({ behavior: 'smooth'})
-    }
-
-    const scrollHome = () => {
-        homeRef.current?.scrollIntoView({ behavior: 'smooth'})
-    }
 
     const [mostrarPopup, setMostrarPopup] = useState(false);
 
@@ -36,6 +17,26 @@ export default function Landingpage() {
                 setMostrarPopup(false)
             }
         };
+    
+
+        const especialidadesRef = useRef(null);
+        const curiosidadeRef = useRef(null);
+        const sobreRef = useRef(null);
+        const homeRef = useRef(null);
+        const location = useLocation();
+    
+        useEffect(() => {
+            if (location.state?.sectionId) {
+                const sectionMap = {
+                    secao1: especialidadesRef,
+                    secao2: curiosidadeRef,
+                    secao3: sobreRef,
+                    secao4: homeRef,
+                };
+                const ref = sectionMap[location.state.sectionId];
+                ref.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }, [location]);
 
     const [mostrarPopup2, setMostrarPopup2] = useState(false);
 
@@ -113,11 +114,11 @@ export default function Landingpage() {
             <div className="cabecalho" ref={homeRef}>
                 <img src="assets/image/logo.webp" alt="nao foi" />
                 <div className="links">
-                    <Link to='/'>Home</Link>
-                    <Link to='#' onClick={scrollSobre}>Sobre Nós</Link>
-                    <Link to='#' onClick={scrollToEspecialidades}>Especialidades</Link>
-                    <Link to='#' onClick={scrollCuruicidade}>Curiosidades</Link>
-                    <Link to='/'>Contatos</Link>
+                <button onClick={() => homeRef.current.scrollIntoView({ behavior: 'smooth' })}>Home</button>
+                    <button onClick={() => sobreRef.current.scrollIntoView({ behavior: 'smooth' })}>Sobre Nós</button>
+                    <button onClick={() => especialidadesRef.current.scrollIntoView({ behavior: 'smooth' })}>Especialidades</button>
+                    <button onClick={() => curiosidadeRef.current.scrollIntoView({ behavior: 'smooth' })}>Curiosidades</button>
+                        <Link to="/">Contatos</Link>
                     
                         <Link id='oloco' to='/telaLogin'> Login </Link>
                        
@@ -139,7 +140,7 @@ export default function Landingpage() {
                     <p>Nosso objetivo é ir além de uma simples seção de fisioterapia e pilates, buscamos impulsionar a sáude dos nossos clientes. Entendemos que cada organização é única em sua estrutura e necessidade, por isso estamos comprometidos em oferecer soluções personalizadas e integradas à sua realidade, independente do seu porte.</p>
                     <p>Estamos prontos para ajudá-lo a alcançar seus objetivos. Nossa experiência e dedicação em transformar-lo uma nova pessoa são a base para o seu sucesso. 
                     Junte-se a nós e    descubra.</p>
-                    <button>Saiba mais</button>
+                    <button> <Link to="/sobre">Saiba mais</Link> </button>
                 </div>
                 <img src="/assets/image/doutora.jpg" alt="Sobre nós" />
             </div>
@@ -333,11 +334,11 @@ export default function Landingpage() {
                 <div className="tres">
                     <h1>Explore</h1>
                     <div className="links">
-                        <Link to='#' onClick={scrollHome}>Home</Link>
-                        <Link to='#' onClick={scrollSobre}>Sobre Nós</Link>
-                        <Link to='#' onClick={scrollToEspecialidades}>Especialidades</Link>
-                        <Link to='#' onClick={scrollCuruicidade}>Curiosidades</Link>
-                        <Link to='/'>Contatos</Link>
+                    <button className='button' onClick={() => homeRef.current.scrollIntoView({ behavior: 'smooth' })}>Home</button>
+                    <button className='button' onClick={() => sobreRef.current.scrollIntoView({ behavior: 'smooth' })}>Sobre Nós</button>
+                    <button className='button' onClick={() => especialidadesRef.current.scrollIntoView({ behavior: 'smooth' })}>Especialidades</button>
+                    <button className='button' onClick={() => curiosidadeRef.current.scrollIntoView({ behavior: 'smooth' })}>Curiosidades</button>
+                        <Link to="/">Contatos</Link>
                     </div>
                 </div>
 

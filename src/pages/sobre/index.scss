@@ -1,0 +1,69 @@
+.sobreMais{
+
+
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #03989F;
+        padding: 20px 0px;
+        width: 100%;
+
+        img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 125px;
+            width: 145px;
+            border-radius: 25px;
+
+        }
+
+        .links{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: #03989F;
+          
+            align-items: center;
+            width: 80%;
+            
+            
+
+            a{
+                font: 400 24px roboto;
+                color: #fff;
+                text-decoration: none;
+              
+            }
+
+            #oloco{
+                color: #03989F; 
+                padding: 5px 10px;
+                border: 3px solid transparent;
+                border-radius: 2px;
+                font: 400 24px roboto;
+                background-color: #fff;
+                transition: .3s;
+            }
+
+            #oloco:hover{
+                transform: scale(1.1);
+                background-color: #27C1C6;
+                color: #fff;
+                border: 3px solid #fff;
+            }
+
+            #oloco:active{
+                background-color: #fff;
+                color: #27C1C6;
+                border: none;
+            }
+        }
+       
+    }
+
+
+    
+
+}
