@@ -47,23 +47,18 @@
                 transition: .3s;
             }
 
-            #oloco:hover{
-                transform: scale(1.1);
-                background-color: #27C1C6;
-                color: #fff;
-                border: 3px solid #fff;
+            button {
+                background-color: #03989F;
+                color: #e6e4e4;
+                border: transparent;
+                font: 400 24px roboto;
             }
 
-            #oloco:active{
-                background-color: #fff;
-                color: #27C1C6;
-                border: none;
-            }
+        
         }
        
     }
 
 
     
-
 }

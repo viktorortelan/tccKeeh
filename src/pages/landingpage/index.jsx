@@ -114,7 +114,7 @@ export default function Landingpage() {
             <div className="cabecalho" ref={homeRef}>
                 <img src="assets/image/logo.webp" alt="nao foi" />
                 <div className="links">
-                <button onClick={() => homeRef.current.scrollIntoView({ behavior: 'smooth' })}>Home</button>
+                    <button onClick={() => homeRef.current.scrollIntoView({ behavior: 'smooth' })}>Home</button>
                     <button onClick={() => sobreRef.current.scrollIntoView({ behavior: 'smooth' })}>Sobre Nós</button>
                     <button onClick={() => especialidadesRef.current.scrollIntoView({ behavior: 'smooth' })}>Especialidades</button>
                     <button onClick={() => curiosidadeRef.current.scrollIntoView({ behavior: 'smooth' })}>Curiosidades</button>
@@ -140,7 +140,7 @@ export default function Landingpage() {
                     <p>Nosso objetivo é ir além de uma simples seção de fisioterapia e pilates, buscamos impulsionar a sáude dos nossos clientes. Entendemos que cada organização é única em sua estrutura e necessidade, por isso estamos comprometidos em oferecer soluções personalizadas e integradas à sua realidade, independente do seu porte.</p>
                     <p>Estamos prontos para ajudá-lo a alcançar seus objetivos. Nossa experiência e dedicação em transformar-lo uma nova pessoa são a base para o seu sucesso. 
                     Junte-se a nós e    descubra.</p>
-                    <button> <Link to="/sobre">Saiba mais</Link> </button>
+                    <button> <Link className='link' to="/sobre">Saiba mais</Link> </button>
                 </div>
                 <img src="/assets/image/doutora.jpg" alt="Sobre nós" />
             </div>
@@ -334,10 +334,10 @@ export default function Landingpage() {
                 <div className="tres">
                     <h1>Explore</h1>
                     <div className="links">
-                    <button className='button' onClick={() => homeRef.current.scrollIntoView({ behavior: 'smooth' })}>Home</button>
-                    <button className='button' onClick={() => sobreRef.current.scrollIntoView({ behavior: 'smooth' })}>Sobre Nós</button>
-                    <button className='button' onClick={() => especialidadesRef.current.scrollIntoView({ behavior: 'smooth' })}>Especialidades</button>
-                    <button className='button' onClick={() => curiosidadeRef.current.scrollIntoView({ behavior: 'smooth' })}>Curiosidades</button>
+                    <button className='final' onClick={() => homeRef.current.scrollIntoView({ behavior: 'smooth' })}>Home</button>
+                    <button className='final' onClick={() => sobreRef.current.scrollIntoView({ behavior: 'smooth' })}>Sobre Nós</button>
+                    <button className='final' onClick={() => especialidadesRef.current.scrollIntoView({ behavior: 'smooth' })}>Especialidades</button>
+                    <button className='final' onClick={() => curiosidadeRef.current.scrollIntoView({ behavior: 'smooth' })}>Curiosidades</button>
                         <Link to="/">Contatos</Link>
                     </div>
                 </div>
