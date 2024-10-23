@@ -114,13 +114,15 @@
                 text-decoration: none;
               
             }
-            & .button {
+            button {
                 font: 400 24px roboto;
                 color: #fff;
                 text-decoration: none;
                 border: none;
                 background: transparent;
+
             }
+            
 
             #oloco{
                 color: #03989F; 
@@ -212,6 +214,13 @@
                 border-radius: 5px;
                 font: 600 12px arial;
                 color: #03989F;
+                    .link{
+                        text-decoration: none;
+                        color: #000;
+                    }
+                        .link:hover{
+                            color: hsl(183, 78%, 18%);
+                        }
             }
                     
         }
@@ -260,6 +269,7 @@
                 width: 250px;
                 cursor: pointer;
             }
+
         }
     }
 
@@ -329,7 +339,11 @@
                 font: 400 20px roboto;
                 color: #000;
                 cursor: pointer;
+                
             }
+            
+           
+                
         }
     }
     
@@ -410,7 +424,7 @@
             h1{
                
                 color: #fff;
-                font: 800 25px Inter;
+                font: 500 25px Inter;
             }
         }
 
@@ -421,6 +435,14 @@
 
             h1{
                 color: #fff;
+            }
+                .final {
+                background-color: #03989F;
+                color: #e6e4e4;
+                border: transparent;
+                font: 400 24px roboto;
+                    display: flex;
+                    justify-items: center;
             }
 
             .links{
