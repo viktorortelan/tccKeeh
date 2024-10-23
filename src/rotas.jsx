@@ -4,6 +4,7 @@ import TelaLogin from "./pages/telaLogin";
 import Home from "./pages/home";
 import Login from "./pages/loginCliente";
 import Sobre from "./pages/sobre";
+import Cadastro from "./pages/cadastrar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
@@ -16,6 +17,7 @@ export default function Rotas() {
                 <Route path="/telaLogin" element={<TelaLogin/>}/>
                 <Route path="/loginCliente" element={<Login/>}/>
                 <Route path= "/sobre" element= {<Sobre/>}/>
+                <Route path= "/cadastrar" element= {<Cadastro/>}/>
             </Routes>
         </BrowserRouter>
     )

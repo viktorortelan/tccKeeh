@@ -6,7 +6,7 @@ import Cabecalho from '../../components/cabecalho';
 export default function Home() {
 
     return(
-        <div className="home pagina">
+        <div className="home">
             <div className="all">
             <div className="esquerda">
                  <Cabecalho/>

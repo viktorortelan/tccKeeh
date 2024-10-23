@@ -1,13 +1,9 @@
 import './index.scss';
-import { Link } from 'react-router-dom';
+
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-
-
-
-
-
-export default function Login() {
+export default function Cadastro() {
     const [email, setEmail] = useState('')
     const [cpf, setCpf] = useState('')
    
@@ -16,14 +12,14 @@ export default function Login() {
 
 
     return (
-        <div className="tela-login">
+        <div className="cadastro">
            <div className="tela">
                 <div className="esquerda">
                     <img src="/assets/image/logo1.png" alt="banner da empresa" />
 
                         <div className="textos">
                             <h1>Bem-vindo a FisioSaúde</h1>
-                            <p>Faça o seu Login para poder ver sua agenda. </p>
+                            <p>Faça o seu Cadastro para poder acessar. </p>
                         </div>
 
                 </div>
@@ -32,7 +28,7 @@ export default function Login() {
 
                         <div className="cartao">
                             <div className="text">
-                                <h1>Login</h1>
+                                <h1>Cadastre-se</h1>
                             </div>
                             <div className="perguntas">
                                 <div className="input">
@@ -43,17 +39,18 @@ export default function Login() {
                                     <h1>SENHA:</h1>
                                     <input type="text"  placeholder=' Digite sua senha'   value={cpf} onChange={e => setCpf(e.target.value)}/>
                                 </div>
+                                <div className="input">
+                                    <h1>INSIRA NOVAMENTE A SENHA:</h1>
+                                    <input type="text"  placeholder=' Digite sua senha novamente'   value={cpf} onChange={e => setCpf(e.target.value)}/>
+                                </div>
 
                             </div>
 
                             
 
-                            <button>Entrar</button>
-                                <div className="senha">
-                                    <a href=""> Esqueceu a senha? </a>
-                                </div>
+                            <button>Cadastre-se</button>
                                 <div className="cadastroNovo"> 
-                                    <Link to="/cadastrar">Ainda não tem conta? <a href="">Faça seu cadastro</a> </Link>
+                                    <Link to="/loginCliente">Já tem conta? <a href="">Faça seu login</a> </Link>
                                </div>
                             
                         </div>

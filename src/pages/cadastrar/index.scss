@@ -1,4 +1,4 @@
-.tela-login{
+.cadastro{
    
     display: flex;
     flex-direction: column;
@@ -63,9 +63,9 @@
                 justify-content: space-between;
                 background-color: #fffffff5;
                 border-radius: 12px;
-                padding: 100px 60px 200px 60px;
+                padding: 80px 60px 200px 60px;
                 height: 600px;
-                gap: 10px;
+                gap: 5px;
                 z-index: 1;
                 .text{
                     h1{
@@ -73,17 +73,7 @@
                     }
                 }
 
-                .senha{
-                    display: flex;
-                    margin-left: 45%;
-                
-                        a{
-                            text-decoration: none;
-                            font: 700 16px Inter;
-                            color: #000000;
-                        }
-                    
-                }
+   
                 
                 .cadastroNovo{
                     display: flex;
