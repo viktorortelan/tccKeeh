@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
-        .landpage{
+.landpage{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -117,7 +114,6 @@
             button {
                 font: 400 24px roboto;
                 color: #fff;
-                text-decoration: none;
                 border: none;
                 background: transparent;
 
@@ -290,12 +286,12 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 55%;
+        width: 75%;
         height: auto;
         border-radius: 20px;
         background-color: white;
         box-shadow: 3px 3px 5px gray;
-        padding: 20px 20px 20px 0px;
+        padding: 20px 25px 20px 0px;
 
         img{
             width: 55vh;
@@ -313,7 +309,7 @@
             padding: 20px;
             border-radius: 20px 20px 20px 0px;
             color: #fff;
-            font: 300 50px roboto;
+            font: 400 40px roboto;
         }
     
         .text {
@@ -438,7 +434,7 @@
             }
                 .final {
                 background-color: #03989F;
-                color: #e6e4e4;
+                color: #fff;
                 border: transparent;
                 font: 400 24px roboto;
                     display: flex;

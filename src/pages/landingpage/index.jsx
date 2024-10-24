@@ -120,7 +120,7 @@ export default function Landingpage() {
                     <button onClick={() => curiosidadeRef.current.scrollIntoView({ behavior: 'smooth' })}>Curiosidades</button>
                         <Link to="/">Contatos</Link>
                     
-                        <Link id='oloco' to='/telaLogin'> Login </Link>
+                        <Link id='oloco' to='/loginCliente'> Login </Link>
                        
                 </div> 
             </div>

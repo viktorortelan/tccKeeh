@@ -40,7 +40,7 @@ export default function Cadastro() {
                                     <input type="text"  placeholder=' Digite sua senha'   value={cpf} onChange={e => setCpf(e.target.value)}/>
                                 </div>
                                 <div className="input">
-                                    <h1>INSIRA NOVAMENTE A SENHA:</h1>
+                                    <h1>CONFIRMAR SENHA:</h1>
                                     <input type="text"  placeholder=' Digite sua senha novamente'   value={cpf} onChange={e => setCpf(e.target.value)}/>
                                 </div>
 
