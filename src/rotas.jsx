@@ -7,6 +7,7 @@ import Sobre from "./pages/sobre";
 import Cadastro from "./pages/cadastrar";
 import TelaCadastrar from "./pages/telaCadastrar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Agenda from "./pages/agenda";
 
 
 export default function Rotas() {
@@ -20,6 +21,7 @@ export default function Rotas() {
                 <Route path= "/sobre" element= {<Sobre/>}/>
                 <Route path= "/cadastrar" element= {<Cadastro/>}/>
                 <Route path="/telaCadastrar" element={<TelaCadastrar/>} />
+                <Route path="/agenda" element={<Agenda/>}/>
             </Routes>
         </BrowserRouter>
     )
