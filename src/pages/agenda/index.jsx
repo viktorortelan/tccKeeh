@@ -65,7 +65,7 @@ export default function Agenda() {
                                 <div className='status'>
                                     <p>pendente</p>
                                 </div>
-                                <p>Aculp. Maria</p>
+                                <p>Aculp. Maria.</p>
                                 <p>09:00</p>
                                 <div className='mores'><p>...</p></div>
                             </div>
