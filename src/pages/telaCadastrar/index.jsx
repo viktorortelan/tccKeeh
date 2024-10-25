@@ -1,6 +1,6 @@
 import './index.scss';
 import Cabecalho from '../../components/cabecalho';
-
+import { Link } from 'react-router-dom';
 
 export default function TelaCadastrar(){
     return(
@@ -16,6 +16,13 @@ export default function TelaCadastrar(){
                         <div className="inputes">
                             <h1>Pesquisa cliente: </h1>
                             <input type="text" placeholder='Digite o nome do cliente ' />
+                        </div>
+                        <div className="botao">
+                            
+                              <Link to="/home" >
+                              <button> + Adicionar Cliente </button>
+                              </Link> 
+                            <button> <img src="/assets/image/bx-filter-alt.svg" alt="" /> Mais Filtros </button>
                         </div>
                     </div>
 

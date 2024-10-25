@@ -1,7 +1,7 @@
 .cards {
     width: 95%;
     background-color: #fff;
-    padding: 5vh;
+    padding: 4vh;
     display: flex;
     flex-direction: column;
     
@@ -14,7 +14,15 @@
         padding: 5px 10px;
         align-items: center;
         margin-top: 40px;
+        button{
+            border: none;
+            height: 30px;
+            font: 600 16px arial;
+            
+            background-color: #f9f4f4;
 
+
+        }
         h1 {
             font: 900 20px Roboto;
         }
@@ -34,7 +42,7 @@
         display: flex;
         flex-direction: column;
         &.show {
-            height: 100vh; 
+            
             opacity: 1;
         }
 

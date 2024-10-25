@@ -6,8 +6,12 @@ import Login from "./pages/loginCliente";
 import Sobre from "./pages/sobre";
 import Cadastro from "./pages/cadastrar";
 import TelaCadastrar from "./pages/telaCadastrar";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Agenda from "./pages/agenda";
+import InserirPacotes from "./pages/inserirPacotes";
+import AddProfissional from "./pages/inserirProfissional";
+import AddDocumento from "./pages/adicionarDocumento";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 
 export default function Rotas() {
@@ -22,6 +26,9 @@ export default function Rotas() {
                 <Route path= "/cadastrar" element= {<Cadastro/>}/>
                 <Route path="/telaCadastrar" element={<TelaCadastrar/>} />
                 <Route path="/agenda" element={<Agenda/>}/>
+                <Route path="/inserirPacotes" element={<InserirPacotes/>}/>
+                <Route path="/inserirProfissional" element={<AddProfissional/>}/>
+                <Route path="/inserirDocumento" element={<AddDocumento/>}/>
             </Routes>
         </BrowserRouter>
     )
